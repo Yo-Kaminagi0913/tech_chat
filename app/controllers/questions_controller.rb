@@ -12,6 +12,10 @@ class QuestionsController < ApplicationController
     redirect_to action
   end
 
+  def show
+    
+  end
+
   private
     def question_params
       params.require(:question).permit(:title, :content, :name)
