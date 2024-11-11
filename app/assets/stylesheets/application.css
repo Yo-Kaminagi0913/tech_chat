@@ -13,3 +13,173 @@
  *= require_tree .
  *= require_self
  */
+
+/* 共通ヘッダー部分の装飾 */
+
+header{
+  background-color: #1c3667;
+  height: 65px;
+}
+
+.header{
+  width: 100vw;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header__logo{
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  font-weight: 100;
+  color: #ffffff;
+  letter-spacing: 1.8px;
+}
+
+.submit{
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 80px;
+  height: 32px;
+}
+
+.submit a {
+  color: #3a3736;
+  line-height: 32px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* 一覧表示画面の装飾 */
+
+.contents{
+  height: calc(100vh - 65px);
+  width: 100vw;
+  background-color: #f2f2f3;
+  padding-top: 90px;
+}
+
+.content-question{
+  display: flex;
+  width: 700px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.content-question__main{
+  width: calc(700px - 70px);
+  background-color: #ffffff;
+  padding: 10px 15px;
+}
+
+.content-question__comments{
+  width: 70px;
+  background-color: #1c3667;
+  border-radius: 5px 0 0  5px;
+}
+
+.content-question__comments__num{
+  height: 58px;
+  padding-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+}
+
+.content-question__comments__com{
+  height: 16px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 11px;
+}
+
+.question-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.question-header__title{
+  font-size: 14px;
+}
+
+.question-header__name{
+  font-size: 12px;
+}
+
+.question-main__content{
+  font-size: 12px;
+  padding-top: 12px;
+}
+
+/* 質問投稿画面の装飾 */
+
+.form-page{
+  height: calc(100vh - 65px);
+  width: 100vw;
+  background-color: #f2f2f3;
+  padding-top: 80px;
+}
+
+.form-main{
+  width: 700px;
+  height: 420px;
+  margin: 0 auto;
+}
+
+.form-top{
+  height: 45px;
+  background-color: #1c3667;
+  border-radius: 5px 5px 0 0;
+}
+
+.form-bottom{
+  height: calc(100% - 45px);
+  background-color: #ffffff;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.forms{
+  width: 520px;
+  text-align: center;
+}
+
+input, textarea{
+  width: 520px;
+}
+
+input[type="submit"]{
+  height: 36px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #1c3667;
+  border: none;
+  margin-bottom: 40px;
+}
+
+input{
+  height: 30px;
+}
+
+textarea{
+  height: 120px;
+}
+
+.form-title{
+  margin:40px 0 15px 0;
+  height: 30px;
+  width: 100%;
+}
+
+.form-content{
+  margin-bottom: 15px;
+}
+
+.form-name{
+  margin-bottom: 20px;
+}
