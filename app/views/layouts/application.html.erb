@@ -15,7 +15,9 @@
   <body>
     <header>
       <div class="header">
-        <div class="header__logo">TechChat</div>
+        <div class="header__logo">
+          <%= link_to 'TechChat', root_path %>
+        </div>
         <div class="header__submit">
           <%= link_to '質問する', new_question_path %>
         </div>

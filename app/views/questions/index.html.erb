@@ -12,7 +12,7 @@
       <div class="content-question__main">
         <div class="question-header">
           <div class="question-header__title">
-            <%= question.title %>
+            <%= link_to question.title, question_path(question.id) %>
           </div>
           <div class="question-header__name">
             <%= question.name %>
