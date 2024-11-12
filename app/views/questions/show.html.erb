@@ -2,13 +2,13 @@
 質問内容：<%= @question.content %><br>
 投稿者名：<%= @question.name %><br>
 
-<%= form_with(model: [@question, @answer], local: true) do |form| %>
+<%= form_with(model: [@question, @answer], local: true) do |form| %><br>
   <%= form.text_area :content, placeholder: '回答する' %><br>
-  <%= form.text_field :name, placeholder: 'ユーザー名' %><br>
+  <%= form.text_field :name, placeholder: '投稿者名' %><br>
   <%= form.submit 'POST' %><br>
 <% end %>
 
 <% @answers.each do |answer| %>
   回答：<%= answer.content %><br>
-  投稿者名：<%= answer.name %><br>
+  投稿者名：<%= answer.name %><br><br>
 <% end %>
