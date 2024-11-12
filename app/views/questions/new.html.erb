@@ -4,17 +4,19 @@
     <div class="form-bottom">
       <div class="forms">
         <%= form_with(model: @question, local: true) do |form| %>
-          <div class="form-title">
-            <%= form.text_field :title, placeholder: "タイトル" %><br>
-          </div>
-          <div class="form-content">
-            <%= form.text_area :content, placeholder: "質問内容" %><br>
-          </div>
-          <div class="form-name">
-            <%= form.text_field :name, placeholder: "投稿者名" %><br>
-          </div>
-          <div class="form-post">
-            <%= form.submit "POST" %>
+          <div class="input-items">
+            <div class="input-items__title">
+              <%= form.text_field :title, placeholder: "タイトル" %><br>
+            </div>
+            <div class="input-items__content">
+              <%= form.text_area :content, placeholder: "質問内容" %><br>
+            </div>
+            <div class="input-items__name">
+              <%= form.text_field :name, placeholder: "投稿者名" %><br>
+            </div>
+            <div class="input-items__submit">
+              <%= form.submit "POST" %>
+            </div>
           </div>
         <% end %>
       </div>
