@@ -7,3 +7,8 @@
   <%= form.text_field :name, placeholder: 'ユーザー名' %><br>
   <%= form.submit 'POST' %><br>
 <% end %>
+
+<% @answers.each do |answer| %>
+  回答：<%= answer.content %><br>
+  投稿者名：<%= answer.name %><br>
+<% end %>
